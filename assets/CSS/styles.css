@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stili per il corpo della pagina */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #00042b, rgb(18, 0, 137));
+}
+
+h1 {
+  color: beige;
+  font-size: 50px;
+  padding-left: 12px;
+}
+
+/* Stili per la barra del menu */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to left, #d5d8ec, #020429);
+  padding: 15px;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Aggiunto spazio tra gli elementi del menu */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Rimuovi lo spazio dopo l'ultimo elemento del menu */
+}
+
+nav ul li a {
+  color: beige;
+  text-decoration: none;
+}
+
+/* Stili per le immagini che si muovono in sequenza */
+.image-container {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 50px;
+  width: 100%;
+  animation: slide-in 25s infinite;
+  animation-delay: 5s, 18s, 25s;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 125px;
+}
+
+h2 {
+  font-size: 35px;
+  color: beige;
+  text-align: center;
+  margin-top: 50px;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, #00042b, rgb(18, 0, 137));
+  z-index: 1;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Stili per i contenuti della pagina */
+.about-section {
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 35px;
+  color: beige;
+  position: sticky;
+  margin-top: 50px;
+  top: 0;
+  background: linear-gradient(to bottom, #00042b, rgb(18, 0, 137));
+  z-index: 1;
+}
+
+.about-section img {
+  width: 250px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 50px;
+}
+
+.about-section p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  color: beige;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Stili per la formattazione responsive */
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    animation: none;
+  }
+
+  .about-section img {
+    width: 100%;
+    height: auto;
+  }
+}
