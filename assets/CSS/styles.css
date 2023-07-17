@@ -87,6 +87,7 @@ h2 {
 /* Stili per i contenuti della pagina */
 .about-section {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .about-section h3 {
@@ -115,6 +116,15 @@ h2 {
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+footer {
+  background: linear-gradient(to left, #d5d8ec, #020429);
+  padding: 6px;
+  color: beige;
+  text-align: center;
+  margin-top: 20px; /* Aggiungi uno spazio di 20px alla parte superiore del footer */
+  font-size: 16px;
 }
 
 /* Stili per la formattazione responsive */
