@@ -35,11 +35,11 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 20px; /* Aggiunto spazio tra gli elementi del menu */
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Rimuovi lo spazio dopo l'ultimo elemento del menu */
+  margin-right: 0;
 }
 
 nav ul li a {
@@ -49,19 +49,42 @@ nav ul li a {
 
 /* Stili per le immagini che si muovono in sequenza */
 .image-container {
-  white-space: nowrap;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
-  width: 100%;
-  animation: slide-in 25s infinite;
-  animation-delay: 5s, 18s, 25s;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-container img {
-  display: inline-block;
   width: 200px;
   height: 200px;
-  margin-right: 125px;
+  margin-right: 20px;
+  scroll-snap-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.image-container::after > span {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 h2 {
@@ -123,32 +146,59 @@ footer {
   padding: 6px;
   color: beige;
   text-align: center;
-  margin-top: 20px; /* Aggiungi uno spazio di 20px alla parte superiore del footer */
+  margin-top: 20px;
   font-size: 16px;
 }
 
 /* Stili per la formattazione responsive */
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    padding-left: 8px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
   nav ul li {
     display: block;
     margin-bottom: 10px;
   }
 
   .image-container {
-    overflow-x: auto;
+    display: flex;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     margin-top: 20px;
   }
 
   .image-container img {
-    width: 100%;
-    height: auto;
-    margin-right: 10px;
-    animation: none;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    scroll-snap-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.1);
   }
 
   .about-section img {
     width: 100%;
     height: auto;
+    margin-top: 30px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
