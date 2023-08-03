@@ -150,6 +150,67 @@ footer {
   font-size: 16px;
 }
 
+/* Stili per il pulsante "Contattami" */
+button {
+  margin-left: 20px;
+  background-color: #007bff;
+  color: beige;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Stili per il form */
+#contactForm {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm textarea {
+  resize: vertical;
+}
+
+#contactForm input[type="submit"],
+#contactForm button[type="button"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactForm input[type="submit"] {
+  margin-right: 10px;
+}
+
+#contactForm button[type="button"] {
+  background-color: #ccc;
+}
+
+
 /* Stili per la formattazione responsive */
 @media only screen and (max-width: 400px) {
   h1 {
