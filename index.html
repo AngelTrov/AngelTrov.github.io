@@ -9,6 +9,7 @@
         <meta name="author" content="Angelo Trovello">
         <link rel="stylesheet" href="assets/CSS/styles.css">
         <link rel="icon" href="path/alla/tua/favicon.ico" type="image/x-icon">
+        
         <title>Portfolio Angelo Trovello</title>
     </head>
 <body>
@@ -18,7 +19,6 @@
         <nav>
             <ul>
                 <li><a href="my-projects.html">I miei progetti</a></li>
-                <li><a href="contacts.html">Contattami</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +41,40 @@
           Ho conseguito una laurea triennale in Ingegneria Gestionale con specializzazione in "Economia Circolare" presso l'Universitas Mercatorum. Il mio obiettivo è applicare le competenze manageriali nel contesto di uno sviluppo sostenibile, concentrandomi su modelli di produzione circolare e promuovendo la circular economy.
         </p>
     </section>
-    
+   
+    <section class="contact-section">
+      <button onclick="openForm()">Contattami</button>
+      <div id="contactForm" style="display: none;">
+          <form method="post" action="assets/php/invia_email.php">
+              <label for="name">Nome e Cognome/Azienda:</label>
+              <input type="text" id="name" name="name" required>
+  
+              <label for="phone">Numero di telefono:</label>
+              <input type="tel" id="phone" name="phone" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="message">Messaggio:</label>
+              <textarea id="message" name="message" required></textarea>
+  
+              <input type="submit" value="Invia">
+              <button type="button" onclick="closeForm()">Annulla</button>
+          </form>
+      </div>
+  </section>
+  
+  <script>
+    function openForm() {
+        document.getElementById("contactForm").style.display = "block";
+    }
+
+    // Funzione per chiudere il form se necessario
+    function closeForm() {
+        document.getElementById("contactForm").style.display = "none";
+    }
+</script>
+      
     <footer>
         <p>&copy; 2023 Angelo Trovello. Tutti i diritti riservati.</p>
     </footer>
