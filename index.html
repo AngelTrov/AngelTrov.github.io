@@ -7,6 +7,7 @@
         <meta name="description" content="Portfolio di Angelo Trovello - Esperto in Amazon seller, aspirante E-commerce Manager">
         <meta name="keywords" content="portfolio, Angelo Trovello, progetti, e-commerce, gestione sito web, amazon seller">
         <meta name="author" content="Angelo Trovello">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <link rel="stylesheet" href="assets/CSS/styles.css">
         <link rel="icon" href="path/alla/tua/favicon.ico" type="image/x-icon">
         
@@ -45,22 +46,18 @@
     <section class="contact-section">
       <button onclick="openForm()">Contattami</button>
       <div id="contactForm" style="display: none;">
-          <form method="post" action="assets/php/invia_email.php">
-              <label for="name">Nome e Cognome/Azienda:</label>
-              <input type="text" id="name" name="name" required>
-  
-              <label for="phone">Numero di telefono:</label>
-              <input type="tel" id="phone" name="phone" required>
-  
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-  
-              <label for="message">Messaggio:</label>
-              <textarea id="message" name="message" required></textarea>
-  
-              <input type="submit" value="Invia">
-              <button type="button" onclick="closeForm()">Annulla</button>
-          </form>
+        <form action="https://formspree.io/f/mknljgna" method="POST">
+            <label for="name">Nome/Azienda:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Invia</button>
+          </form> 
       </div>
   </section>
   
@@ -74,7 +71,8 @@
         document.getElementById("contactForm").style.display = "none";
     }
 </script>
-      
+
+
     <footer>
         <p>&copy; 2023 Angelo Trovello. Tutti i diritti riservati.</p>
     </footer>
