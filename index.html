@@ -44,33 +44,38 @@
     </section>
    
     <section class="contact-section">
-      <button onclick="openForm()">Contattami</button>
-      <div id="contactForm" style="display: none;">
-        <form action="https://formspree.io/f/mknljgna" method="POST">
-            <label for="name">Nome/Azienda:</label>
-            <input type="text" id="name" name="name" required>
-          
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" required></textarea>
-          
-            <button type="submit">Invia</button>
-          </form> 
-      </div>
-  </section>
-  
-  <script>
-    function openForm() {
-        document.getElementById("contactForm").style.display = "block";
-    }
-
-    // Funzione per chiudere il form se necessario
-    function closeForm() {
-        document.getElementById("contactForm").style.display = "none";
-    }
-</script>
+        <button id="contactButton" onclick="toggleForm()">Contattami</button>
+        <div id="contactForm" style="display: none;">
+            <form action="https://formspree.io/f/mknljgna" method="POST">
+                <label for="name">Nome e Cognome/Azienda:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        function toggleForm() {
+            const contactForm = document.getElementById("contactForm");
+            const contactButton = document.getElementById("contactButton");
+    
+            if (contactForm.style.display === "none") {
+                contactForm.style.display = "block";
+                contactButton.textContent = "Contattami";
+            } else {
+                contactForm.style.display = "none";
+                contactButton.textContent = "Contattami";
+            }
+        }
+    </script>
+    
 
 
     <footer>
