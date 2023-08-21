@@ -10,12 +10,17 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
+  margin: 0;
 }
 
 /* Stile per l'header */
 header {
   background-color: #333;
   color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 header nav ul {
@@ -34,13 +39,14 @@ header nav ul li a {
   color: #fff;
 }
 
-/* Stile per la sezione dell'eroe */
+/* Stile per la sezione hero */
 .hero-section {
   background-size: cover;
   background-position: center;
   text-align: center;
   color: white;
   padding: 100px 0;
+  margin-top: 65px;
 }
 
 .hero-section h1 {
@@ -53,7 +59,7 @@ header nav ul li a {
   opacity: 0.8;
 }
 
-/* Stile per la sezione delle skill */
+/* Stile per la sezione delle skills */
 .skills-section {
   padding: 50px 0;
   text-align: center;
@@ -66,12 +72,17 @@ header nav ul li a {
 
 .image-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .image-container img {
-  max-width: 100px;
+  max-width: 170px;
+  width: 100%;
+  height: auto;
 }
 
 /* Stile per la sezione "Chi sono?" */
@@ -93,17 +104,21 @@ header nav ul li a {
   padding: 20px;
 }
 
+.about-section img {
+  max-width: 100%;
+}
+
 /* Stile per la sezione dei contatti */
 .contact-section {
   padding: 50px 0;
   text-align: center;
-  color:black;
+  color: black;
 }
 
 .contact-section button {
   font-size: 18px;
   block-size: 60px;
-  background-color:blue;
+  background-color: blue;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -111,7 +126,7 @@ header nav ul li a {
 }
 
 .contact-section button:hover {
-  background-color:green;
+  background-color: green;
 }
 
 /* Stile per il footer */
@@ -130,4 +145,54 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Stile per schermi mobile */
+@media (max-width: 400px) {
+  header nav ul {
+    padding: 5px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  header nav ul li {
+    width: auto;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+  
+  .skills-section {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .contact-section button {
+    font-size: 14px;
+    block-size: 40px;
+    padding: 6px 12px;
+  }
 }
