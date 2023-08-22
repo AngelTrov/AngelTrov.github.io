@@ -202,8 +202,8 @@ a:hover {
 /* Stile per schermi mobile */
 @media (max-width: 400px) {
   header nav ul {
-    padding: 5px 0;
-    font-size: 13px;
+    padding: 10px 0;
+    font-size: 10px;
     text-align: center;
   }
 
@@ -216,20 +216,25 @@ a:hover {
     background-position: center;
     text-align: center;
     color: white;
-    padding: 25px 0;
+    padding: 50px 0;
   }
 
   .hero-section h1 {
-    font-size: 2em;
+    font-size: 1.1em;
   }
 
   .hero-description {
-    font-size: 1em;
+    font-size: 0.5em;
   }
   
   .skills-section {
     padding: 10px 0;
     text-align: center;
+  }
+
+  .skills-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
   
   .about-section {
@@ -238,8 +243,17 @@ a:hover {
     background-color: #f8f8f8;
   }
 
+  .about-section img {
+    max-width: 75%;
+  }
+
   .content {
     padding: 15px;
+  }
+
+  .about-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
 
    .contact-section {
@@ -256,5 +270,195 @@ a:hover {
   .image-container img {
     max-width: 120px;
   }
-  
+
+  .hero-section {
+    background-position: 0px;
+  }
 }
+
+/* Stile per schermi tablet */
+@media (min-width: 400px) and (max-width: 520px) {
+  header nav ul {
+    padding: 12px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  header nav ul li {
+    width: auto;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.3em;
+  }
+
+  .hero-description {
+    font-size: 0.6em;
+  }
+  
+  .skills-section {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .skills-section h2 {
+    font-size: 1.7em;
+    margin-bottom: 12px;
+  }
+  
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .about-section img {
+    max-width: 78%;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .about-section h3 {
+    font-size: 1.7em;
+    margin-bottom: 12px;
+  }
+
+   .contact-section {
+    padding: 20px 0;
+  }
+
+  .contact-section button {
+    font-size: 14px;
+    block-size: 40px;
+    width: auto;
+    padding: 6px 12px;
+  }
+ 
+  .image-container img {
+    max-width: 150px;
+  }
+
+  .hero-section {
+    background-position: 0px;
+  }
+}
+
+/* Stile per schermi tablet */
+@media (min-width: 520px) and (max-width: 757px) {
+  header nav ul {
+    padding: 5px 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  header nav ul li {
+    width: auto;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.7em;
+  }
+
+  .hero-description {
+    font-size: 0.7em;
+  }
+  
+  .skills-section {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .skills-section h2 {
+    font-size: 1.7em;
+    margin-bottom: 12px;
+  }
+  
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .about-section img {
+    max-width: 70%;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .about-section h3 {
+    font-size: 1.7em;
+    margin-bottom: 12px;
+  }
+
+   .contact-section {
+    padding: 20px 0;
+  }
+
+  .contact-section button {
+    font-size: 14px;
+    block-size: 40px;
+    width: auto;
+    padding: 6px 12px;
+  }
+ 
+  .image-container img {
+    max-width: 170px;
+  }
+
+  .hero-section {
+    background-position: 0px;
+  }
+}
+
+/* Stile per schermi tablet superiori */
+@media (min-width: 757px) and (max-width: 900px) {
+  header nav ul {
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 120px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.4em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+  
+  .hero-section {
+    background-position: 0px;
+  }
+  .about-section img {
+    max-width: 60%;
+  }
+
+
+ }
