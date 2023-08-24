@@ -38,6 +38,13 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #fff;
+  padding: 5px 10px;
+}
+
+header nav ul li img {
+  width: 18px;
+  height: auto;
+  margin-right: 3px;
 }
 
 /* Stile per la sezione hero */
@@ -202,13 +209,24 @@ a:hover {
 /* Stile per schermi mobile */
 @media (max-width: 400px) {
   header nav ul {
-    padding: 10px 0;
-    font-size: 10px;
+    padding: 16px 0;
+    font-size: 12px;
     text-align: center;
+    margin-left: 0;
   }
 
   header nav ul li {
-    width: auto;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 5px 0;
+  }
+
+  header nav ul li a img {
+    max-width: 30px;
+    height: auto;
   }
 
   .hero-section {
@@ -279,13 +297,24 @@ a:hover {
 /* Stile per schermi tablet */
 @media (min-width: 400px) and (max-width: 520px) {
   header nav ul {
-    padding: 12px 0;
-    font-size: 13px;
+    padding: 16px 0;
+    font-size: 12px;
     text-align: center;
+    margin-left: 0;
   }
 
   header nav ul li {
-    width: auto;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 5px 0;
+  }
+
+  header nav ul li a img {
+    max-width: 30px;
+    height: auto;
   }
 
   .hero-section {
@@ -356,13 +385,24 @@ a:hover {
 /* Stile per schermi tablet */
 @media (min-width: 520px) and (max-width: 757px) {
   header nav ul {
-    padding: 5px 0;
-    font-size: 13px;
+    padding: 16px 0;
+    font-size: 12px;
     text-align: center;
+    margin-left: 0;
   }
 
   header nav ul li {
-    width: auto;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 5px 0;
+  }
+
+  header nav ul li a img {
+    max-width: 30px;
+    height: auto;
   }
 
   .hero-section {
