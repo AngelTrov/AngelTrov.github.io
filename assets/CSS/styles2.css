@@ -67,28 +67,324 @@
   opacity: 0.95;
 }
 
-.progetti-section {
+.about-section {
   padding: 50px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.progetto {
-  margin: 20px;
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
 }
 
-.progetto img {
+.about-section p {
+  font-size: 1.1em;
+}
+
+.about-section img {
   max-width: 100%;
-  height: auto;
+}
+
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+  color: black;
+}
+
+.contact-section button {
+  font-size: 18px;
+  block-size: 60px;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: green;
+  transform: scale(0.95); 
+}
+
+#contactForm {
+  display: none;
+  margin-top: 20px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+}
+
+#contactForm form {
+  background-color: #f8f8f8;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
-.progetto h2 {
-  margin-top: 10px;
-  font-size: 1.5em;
+#contactForm label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.progetto p {
-  margin-top: 10px;
-  font-size: 1.1em;
+#contactForm input,
+#contactForm textarea {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm button[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; 
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: green;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+a {
+  color: #02264D;
+  
+}
+
+/* Stile per schermi mobile */
+@media (max-width: 400px) {
+  header nav ul {
+    padding: 16px 0;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  header nav ul li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 5px 0;
+  }
+
+  header nav ul li a img {
+    max-width: 30px;
+    height: auto;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-description {
+    font-size: 0.8em;
+  }
+ 
+  .hero-section {
+    background-position: 0px;
+  }
+  
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .about-section img {
+    max-width: 100%;
+  }
+
+  .about-section p {
+    font-size: 0.99em;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .about-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+   .contact-section {
+    padding: 20px 0;
+  }
+
+  .contact-section button {
+    font-size: 14px;
+    block-size: 40px;
+    width: auto;
+    padding: 6px 12px;
+  }
+}
+
+/* Stile per schermi tablet */
+@media (min-width: 520px) and (max-width: 757px) {
+  header nav ul {
+    padding: 16px 0;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  header nav ul li {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 5px 0;
+  }
+
+  header nav ul li a img {
+    max-width: 30px;
+    height: auto;
+  }
+
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .about-section img {
+    max-width: 100%;
+  }
+
+  .about-section p {
+    font-size: 1.1em;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .about-section h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+   .contact-section {
+    padding: 20px 0;
+  }
+
+  .contact-section button {
+    font-size: 16px;
+    block-size: 45px;
+    width: auto;
+    padding: 6px 12px;
+  }
+}
+/* Stile per schermi tablet e superiori */
+@media (min-width: 757px) and (max-width: 900px) {
+  header nav ul {
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 120px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-description {
+    font-size: 1.2em;
+  }
+  
+  .hero-section {
+    background-position: 0px;
+  }
+  .about-section {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+
+  .about-section img {
+    max-width: 100%;
+  }
+
+  .about-section p {
+    font-size: 1.2em;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .about-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+   .contact-section {
+    padding: 20px 0;
+  }
+
+  .contact-section button {
+    font-size: 18px;
+    block-size: 48px;
+    width: auto;
+    padding: 6px 12px;
+  }
 }

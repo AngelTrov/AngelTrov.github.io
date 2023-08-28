@@ -38,26 +38,76 @@
         <p class="hero-description">Dai uno sguardo, ti sorprenderò!</p>
     </section>
 
-    <section class="progetti-section">
-        <div class="progetto">
-            <h2>Progetto X</h2>
-            <img src="assets/images/progetto1.jpg" alt="Immagine del Progetto">
-            <p>scrivere copy</p>
+    <section class="about-section">
+        <div class="content">
+            <h2>Progetto Copywriting</h2>
+            <img src="assets/images/copy-img.png" alt="Immagine Progetto Copywriting">
+            <p>Scopri il mio viaggio nel mondo del copywriting attraverso questo <strong>progetto</strong> davvero <strong>emozionante</strong> svolto per <a href="https://www.start2impact.it/" target="_blank">Start2Impact</a>.
+                <br><br>
+                Ho padroneggiato l'arte di catturare l'attenzione con <strong>tecniche</strong> di <strong>persuasione</strong> sofisticate e ho imparato a scrivere <strong>blog</strong> coinvolgenti che lasciano il segno. Durante questo percorso, ho affinato la mia <strong>abilità</strong> nel <strong>connettermi autenticamente</strong> con il pubblico, trasformando le parole in <strong>strumenti potenti</strong> per ispirare azioni significative.
+                <br><br>
+                In questo progetto, ho compreso che il <strong>copywriting</strong> è molto più di semplici parole su una pagina; è un'arte che richiede <strong>abilità strategiche</strong> e <strong>sensibilità creativa</strong>.
+                <br><br>
+                Se sei <strong>curios*</strong> di <strong>vedere</strong> come ho messo in pratica queste <strong>abilità</strong>, esplora il mio progetto e <strong>lasciati ispirare!</strong>
+                <br><br>
+                <strong>Guarda</strong> il mio <a href="assets/images/Progetto Copywriting per Il Vestito Verde di Angelo Trovello.pdf" target="_blank"><strong>Progetto Copywriting</strong> </a>
+            </p>
         </div>
         
-        <div class="progetto">
-            <h2>Progetto Y</h2>
-            <img src="assets/images/progetto2.jpg" alt="Immagine del Progetto">
-            <p>scrivere copy</p>
+        <div class="content">
+            <h2>Progetti in arrivo</h2>
+            <img src="assets/images/coming-soon.png" alt="Immagine Coming-soon">
+            <p>Se hai letto <strong>chi sono</strong>, saprai anche che ho tanta <strong>voglia</strong> di <strong>fare</strong> e di <strong>sperimentare</strong>, infatti ho <strong>altri progetti</strong> in cantiere. Vuoi degli spoiler? <strong>Ti accontento</strong>.
+                <br><br>
+                Dietro le quinte sto <strong>lavorando</strong> a un nuovo <strong>progetto</strong> su <a href="https://www.shopify.com/it" target="_blank">Shopify</a> per la creazione di un <strong>negozio online</strong> con tutte le funzionalità necessarie, ma <strong>non è tutto</strong>.
+                <br><br>
+                <strong>Questo sito web</strong> su cui stai navigando ora, è come il mio piccolo <strong>angolo di creatività</strong>, dove cerco di <strong>dare vita</strong> alle mie <strong>idee</strong> e trasformarle in <strong>qualcosa di speciale</strong>. Ma sai una cosa? <strong>Siamo solo all'inizio</strong>.
+                <br><br>
+                Questi sono solo due dei <strong>tanti progetti</strong> ancora <strong>in sviluppo</strong>, se vuoi saperne di più o sei interessat* a una collaborazione, <strong>non esitare, contattami!</strong>
+            </p>
         </div>
-        
-        <div class="progetto">
-            <h2>Progetto Z</h2>
-            <img src="assets/images/progetto3.jpg" alt="Immagine del Progetto">
-            <p>scrivere copy</p>
+
+    </section>
+    
+    <section class="contact-section">
+        <button id="contactButton" onclick="toggleForm()">Contattami</button>
+        <div id="contactForm" style="display: none;">
+            <form action="https://formspree.io/f/mknljgna" method="POST">
+                <label for="name">Nome e Cognome/Azienda:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Invia</button>
+            </form>
         </div>
     </section>
     
+    <script>
+        function toggleForm() {
+            const contactForm = document.getElementById("contactForm");
+            const contactButton = document.getElementById("contactButton");
+    
+            if (contactForm.style.display === "none") {
+                contactForm.style.display = "block";
+                contactButton.textContent = "Contattami";
+            } else {
+                contactForm.style.display = "none";
+                contactButton.textContent = "Contattami";
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>&copy; 2023 Angelo Trovello. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
 
 
 
