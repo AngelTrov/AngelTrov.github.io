@@ -262,7 +262,7 @@ a:hover {
   }
 
   .about-section img {
-    max-width: 75%;
+    max-width: 70%;
   }
 
   .content {
@@ -350,7 +350,7 @@ a:hover {
   }
 
   .about-section img {
-    max-width: 78%;
+    max-width: 75%;
   }
 
   .content {
@@ -470,7 +470,7 @@ a:hover {
   }
 }
 
-/* Stile per schermi tablet superiori */
+/* Stile per schermi tablet e superiori */
 @media (min-width: 757px) and (max-width: 900px) {
   header nav ul {
     padding: 20px 0;
@@ -499,6 +499,4 @@ a:hover {
   .about-section img {
     max-width: 60%;
   }
-
-
  }
