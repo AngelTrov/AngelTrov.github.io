@@ -49,6 +49,7 @@ header nav ul li img {
 
 /* Stile per la sezione hero */
 .hero-section {
+  background-image: url('../images/BACKGROUND\ \ 1.png');
   background-size: cover;
   background-position: center;
   text-align: center;

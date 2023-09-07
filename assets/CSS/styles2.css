@@ -49,6 +49,7 @@
   /* Stile per la sezione hero */
 
   .hero-section {
+  background-image:url("../images/background-progetti\ \(1\).png");
   background-size: cover;
   background-position: center;
   text-align: center;
